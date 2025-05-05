@@ -1,0 +1,91 @@
+type: custom:navbar-card
+mobile:
+  show_labels: true
+desktop:
+  show_labels: true
+  position: left
+  min_width: 768
+routes:
+  - url: /mobile-dark/overview
+    label: Home
+    icon: mdi:home-outline
+    icon_selected: mdi:home
+  - url: /mobile-dark/room
+    label: Rooms
+    icon: mdi:sofa-outline
+    tap_action:
+      action: navigate
+      navigation_path: /mobile-dark/room
+    hold_action:
+      action: open-popup
+    popup:
+      - icon: mdi:garage-variant
+        url: /mobile-dark/garage-room-details
+      - icon: mdi:sofa
+        url: /mobile-dark/living-area-room-details
+      - icon: mdi:bed-king
+        url: /mobile-dark/master-bedroom-details
+      - icon: mdi:baby-carriage
+        url: /mobile-dark/baby-room-details
+      - icon: mdi:account-plus
+        url: /mobile-dark/single-guest-room-details
+      - icon: mdi:account-group
+        url: /mobile-dark/multiple-guest-room-details
+      - icon: mdi:washing-machine
+        url: /mobile-dark/laundry-room-details
+      - icon: mdi:desktop-tower-monitor
+        url: /mobile-dark/office-room-details
+  - url: /dashboard-mobile/scenes
+    label: Scenes
+    icon: mdi:layers-outline
+  - url: /mobile-dark/camera
+    label: Camera
+    icon: mdi:camera-outline
+  - icon: mdi:dots-horizontal
+    label: More
+    tap_action:
+      action: open-popup
+    popup:
+      - icon: mdi:cog
+        url: /config/dashboard
+      - icon: mdi:hammer
+        url: /developer-tools/yaml
+      - icon: mdi:power
+        tap_action:
+          action: call-service
+          service: homeassistant.restart
+          service_data: {}
+          confirmation:
+            text: Are you sure you want to restart Home Assistant?
+styles: |
+  .navbar {
+    background: var(--nav-background);
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(33px) !important;
+    background-blend-mode: overlay;
+    border-radius: 20px; /* Add rounded corners */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    overflow: hidden; /* Hide any overflow caused by rounded corners */
+  }
+
+  .navbar-item {
+    border-radius: 30px; /* Apply rounded corners to the items as well */
+  }
+
+  /* Apply white filter to unselected icons */
+  .navbar-item:not(.active) ha-icon {
+    filter: brightness(0) invert(1);
+  }
+
+  .navbar-item.active {
+    background-color: rgba(0, 0, 255, 0.1); /* Adjust the blue highlight color and opacity */
+  }
+
+  .submenu {
+    background: var(--nav-background);
+    backdrop-filter: blur(33px);
+    -webkit-backdrop-filter: blur(33px) !important;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
