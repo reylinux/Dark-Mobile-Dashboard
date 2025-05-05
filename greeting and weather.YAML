@@ -1,0 +1,15 @@
+{% set time = now().hour %}
+{% if (time >= 18) %} 
+# Evening, {{ user }}!
+{% elif (time >= 12) %}
+# Afternoon, {{ user }}!
+{% elif (time >= 5) %}
+# Morning, {{ user }}!
+{% else %}
+# Welcome, {{ user }}!
+{% endif %}
+
+**Here is how it feels like today:**  
+🌡️ 🔺High of {{ states('sensor.home_realfeel_temperature_max_day_0') }}°C, 🔻Low of {{ states('sensor.home_realfeel_temperature_min_day_0') }}°C.  
+{{ states('input_text.weather_ai_wind') }}  
+{{ states('input_text.weather_ai_uv') }}  
