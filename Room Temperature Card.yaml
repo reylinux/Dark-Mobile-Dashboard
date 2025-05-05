@@ -1,0 +1,80 @@
+type: custom:apexcharts-card
+graph_span: 12h
+header:
+  show_states: true
+  colorize_states: true
+  standard_format: true
+  show: true
+experimental:
+  color_threshold: true
+all_series_config:
+  float_precision: 1
+  stroke_width: 2
+  show:
+    header_color_threshold: true
+    extremas: true
+  color_threshold:
+    - value: 0
+      color: "#896ab2"
+    - value: 16
+      color: "#488dad"
+    - value: 18
+      color: "#78b09a"
+    - value: 22
+      color: "#b38f4c"
+    - value: 24
+      color: "#b25149"
+    - value: 27
+      color: "#b2160c"
+apex_config:
+  yaxis:
+    decimalsInFloat: 0
+  xaxis:
+    labels:
+      format: HH:00
+  grid:
+    show: true
+  legend:
+    show: trye
+  chart:
+    zoom:
+      enabled: true
+    toolbar:
+      show: true
+      tools:
+        zoom: true
+        zoomin: true
+        zoomout: true
+        pan: true
+        reset: true
+    height: 250px
+series:
+  - entity: sensor.living_room_temperature
+    name: Living Area
+    type: area
+    opacity: 0
+    color: "#f2e9e4"
+  - entity: sensor.master_bedroom_temperature
+    name: Master
+    type: area
+    opacity: 0
+    color: "#4285F4"
+    curve: smooth
+  - entity: sensor.baby_room_temperature
+    name: Baby
+    type: area
+    opacity: 0
+    color: "#34a853"
+    curve: smooth
+  - entity: sensor.single_guest_room_temperature
+    name: Single Guest
+    type: area
+    opacity: 0
+    color: "#fbbc05"
+    curve: smooth
+  - entity: sensor.multiple_guest_room_temperature
+    name: Multiple Guest
+    type: area
+    opacity: 0
+    color: "#ea4335"
+    curve: smooth
