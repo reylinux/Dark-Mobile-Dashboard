@@ -5,24 +5,22 @@ After a year of working with Home Assistant, I’ve finally decided to give back
 ![Untitled design](https://github.com/user-attachments/assets/8ff64811-e91c-4f5c-9076-9c76c88de06c)
 
 HACS repos you would need to replicate the dashboard:
-- [Mushroom](http://homeassistant.local:8123/hacs/repository/444350375)
-- [Mini Graph Card](http://homeassistant.local:8123/hacs/repository/151280062)
-- [Button Card](http://homeassistant.local:8123/hacs/repository/146194325)
-- [Mini Media Player](http://homeassistant.local:8123/hacs/repository/148520838)
-- [Auto-entities](http://homeassistant.local:8123/hacs/repository/167744584)
-- [Apexcharts-card](http://homeassistant.local:8123/hacs/repository/331701152)
-- [card-mod](http://homeassistant.local:8123/hacs/repository/190927524)
-- [layout-card](http://homeassistant.local:8123/hacs/repository/156434866)
-- [vertical stack in card](http://homeassistant.local:8123/hacs/repository/142051833)
-- [calendar card pro](http://homeassistant.local:8123/hacs/repository/939311749)
-- [kiosk mod](http://homeassistant.local:8123/hacs/repository/497319128)
-- [config template card](http://homeassistant.local:8123/hacs/repository/172177543)
-- [paper buttons row](http://homeassistant.local:8123/hacs/repository/244872232)
-- [stack in card](http://homeassistant.local:8123/hacs/repository/248954055)
-- [material you theme](http://homeassistant.local:8123/hacs/repository/701591334)
-- [my cards bundle](http://homeassistant.local:8123/hacs/repository/399108901)
-- [local conditional card](http://homeassistant.local:8123/hacs/repository/218178802)
-- [navbar card](http://homeassistant.local:8123/hacs/repository/871106499)
+- [Mushroom](https://github.com/piitaya/lovelace-mushroom)
+- [Mini Graph Card](https://github.com/kalkih/mini-graph-card)
+- [Button Card](https://github.com/custom-cards/button-card)
+- [Auto Entities](https://github.com/thomasloven/lovelace-auto-entities)
+- [Apexchart-card](https://github.com/RomRider/apexcharts-card)
+- [card-mod](https://github.com/thomasloven/lovelace-card-mod)
+- [layout-card](http://homeassistant.local:8123/hacs/repository/156434866)  - local HACS link
+- [vertical stack in card](http://homeassistant.local:8123/hacs/repository/142051833)  - local HACS link
+- [calendar card pro](https://github.com/alexpfau/calendar-card-pro)
+- [config template card](https://github.com/iantrich/config-template-card)
+- [paper buttons row](http://homeassistant.local:8123/hacs/repository/244872232) - local HACS link
+- [stack in card](http://homeassistant.local:8123/hacs/repository/248954055) - local HACS link
+- [material you theme](http://homeassistant.local:8123/hacs/repository/701591334) - local HACS link
+- [my cards bundle](http://homeassistant.local:8123/hacs/repository/399108901) - local HACS link
+- [local conditional card](http://homeassistant.local:8123/hacs/repository/218178802) - local HACS link
+- [navbar-card](https://github.com/joseluis9595/lovelace-navbar-card)
 
 Integrations required:
 - AccuWeather
