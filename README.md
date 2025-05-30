@@ -1,3 +1,11 @@
+
+# UPDATE 30/5/2025
+Hi Everyone,
+
+I have made quite a substancial QoL upgrades over the time since the last time I shared this dashboard. Please head over to my newest version [here](https://github.com/reylinux/Dark-and-Light-Mobile-Dashboard)
+
+
+
 # Introduction
 
 After a year of working with Home Assistant, I’ve finally decided to give back to the community by sharing what I’ve learned. Along the way, I’ve incorporated visuals and ideas generously shared by others across various communities. Full credit goes to the original creators—I’m simply adapting and modifying their work to suit my own needs.
